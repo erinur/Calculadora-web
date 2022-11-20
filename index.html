@@ -14,29 +14,31 @@
     <div class="container">
       <div class="calculadora">
         <div id="display">
+          <div id="alertas"></div>
           <div id="numero-anterior"></div>
           <div id="numero-actual"></div>
         </div>
         <form class="cuerpo" action="">
           <button type="button" value="" id="clear" class="boton" onclick="init()">C</button>
           <button type="button" value="" id="borrar" class="boton" onclick="borrarUltimo()">&larrb;</button>
-          <button type="button" value="/" id="divide" class="boton operacion" onclick="añadir('/')">&divide;</button>
+          <button type="button" value="/" id="divide" class="boton operacion" onclick="operar('/')">&divide;</button>
           <button type="button" value="7" id="seven" class="boton numero" onclick="añadir(7)">7</button>
           <button type="button" value="8" id="eight" class="boton numero" onclick="añadir(8)">8</button>
           <button type="button" value="9" id="nine" class="boton numero" onclick="añadir(9)">9</button>
-          <button type="button" value="*" id="multiply" class="boton operacion" onclick="añadir('*')">&times;</button>
+          <button type="button" value="*" id="multiply" class="boton operacion" onclick="operar('*')">&times;</button>
           <button type="button" value="4" id="four" class="boton numero" onclick="añadir(4)">4</button>
           <button type="button" value="5" id="five" class="boton numero" onclick="añadir(5)">5</button>
           <button type="button" value="6" id="six" class="boton numero" onclick="añadir(6)">6</button>
-          <button type="button" value="-" id="subtract" class="boton operacion" onclick="añadir('-')">&minus;</button>
+          <button type="button" value="-" id="subtract" class="boton operacion" onclick="operar('-')">&minus;</button>
           <button type="button" value="1" id="one" class="boton numero" onclick="añadir(1)">1</button>
           <button type="button" value="2" id="two" class="boton numero" onclick="añadir(2)">2</button>
           <button type="button" value="3" id="three" class="boton numero" onclick="añadir(3)">3</button>
-          <button type="button" value="+" id="add" class="boton operacion" onclick="añadir('+')">&plus;</button>
+          <button type="button" value="+" id="add" class="boton operacion" onclick="operar('+')">&plus;</button>
           <button type="button" value="0" id="zero" class="boton numero" onclick="añadir(0)">0</button>
           <button type="button" value="." id="decimal" class="boton" onclick="añadir('.')">&sdot;</button>
           <button type="button" value="=" id="equals" class="boton" onclick="resultado()">&equals;</button>
         </form>
+        
       </div>
     </div>
   </body>

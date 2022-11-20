@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 
 
@@ -90,7 +90,7 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   text-align: center;
-  font-family: 'outfit';
+  font-family: 'Roboto Mono', monospace;
 }
 
 .container {
@@ -121,7 +121,7 @@ body {
 #display {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width:100%;
   height: auto;
@@ -129,17 +129,24 @@ body {
   background-color: #000000;
   border-radius: 5px;
   color: aliceblue;
-  padding: 1.5rem 1rem;
+  padding: 0.25rem;
   align-self: flex-end;
   font-size: 2rem;
   height: 5rem;
+}
+#alertas {
+  position: absolute;
+  align-self: center;
+  width: 18.1rem;
+  font-size: 1.5rem;
+  background-color: #000000;
 }
 
 #numero-anterior {
   align-self: flex-end;
   width: 100%;
-  font-size: 1rem;
-  height: 1.5rem;
+  font-size: 0.75rem;
+  height: 2rem;
   background-color: #000000dd;
   text-align: right;
 }
@@ -147,8 +154,8 @@ body {
 #numero-actual {
   align-self: flex-end;
   width: 100%;
-  font-size: 2rem;
-  height: 3rem;
+  font-size: 1.5rem;
+  height: 2rem;
   background-color: #000000dd;
   text-align: right;
 }
